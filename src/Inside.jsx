@@ -26,6 +26,7 @@ export default function Inside() {
                     <div className='Details'>
                     <h3>title:{data.title}</h3>
                     <h3>Date:{data.date}</h3>
+                    <h3>Date:{data.description}</h3>
                     <h3>Location:{data.location}</h3>
                     <h3>Capacity:{data.capacity}</h3>
                     </div>
