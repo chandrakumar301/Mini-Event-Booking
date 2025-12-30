@@ -1,10 +1,19 @@
 body{
+  background-repeat: repeat;
  background: radial-gradient(
   ellipse at top,
   #1e3c72,
   #2a5298,
   #0f2027
 );
+ 
+}
+.chandra{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+
 }
 .A1{
   display: flex;

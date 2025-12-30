@@ -11,6 +11,7 @@ function DashBoard() {
     const [log,setLog]=useState(false);
     const [sign,setSign]=useState(false);
     const [host,setHost]=useState(false);
+    // const k=true;
 const event=()=>{
     setEve(true);
     setUreve(false);
@@ -62,6 +63,7 @@ const host1=()=>{
             </nav>
             <a href="/profile">P</a>
         </header>
+        {/* {k?<h1>Welcome</h1>:null} */}
         <div className='Dash2'>
             {eve ? <Events/> 
             : ureve ? <Events/>

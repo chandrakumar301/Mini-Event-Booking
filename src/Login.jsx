@@ -1,16 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./App.css"
+import axios from "axios"
 function Login() {
+  const [email,setEmail]=useState("");
+  const [pass,setPass]=useState("");
+
+  const AuthPerson=async ()=>{
+    try{
+    const A=await axios.post("http://localhost:5000/login",{
+      email:email,
+      password:pass
+      })
+      console.log(A.data);
+    }
+    catch (error){
+       alert(error.response.data.message);
+    }
+  }
   return (
     <div className='Log'>
         <div className='Bar'>
             <h1>Welcome Back</h1>
             <div className='Items'>
-                <label htmlFor="name"></label>
-                <input id='name' type="text"  placeholder='EnterName'/>
-                <label htmlFor="password"></label>
+                <input id='name' type="email"   value={email} onInput={(e)=>{setEmail(e.target.value)}}placeholder='EnterName'/>
                 <input id='password' type="password"  placeholder='Enter Password'/>
-                <button className='but'>Login</button>
+                <button className='but'  value={pass} onInput={(e)=>{setPass(e.target.value)}}onClick={()=>{AuthPerson()}}>Login</button>
             </div>
             
             <div className='Forget'>

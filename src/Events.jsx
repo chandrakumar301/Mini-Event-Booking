@@ -8,11 +8,6 @@ function Events() {
             <input type="search" placeholder='Search Events'/>
             </div>
             <Inside/>
-            <Inside/>
-            <Inside/>
-            <Inside/>
-            <Inside/>
-            <Inside/>
         </div>
       
     </div>
