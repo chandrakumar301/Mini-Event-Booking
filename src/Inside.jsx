@@ -8,7 +8,7 @@ export default function Inside() {
     useEffect(()=>{
         const GetEvents=async ()=>{
             try{
-            const D =await axios.get("http://localhost:5000/getevent");
+            const D =await axios.get("https://mini-event-backend-808f.onrender.com/getevent");
             setEvents(D.data.Get);
             }
             catch(err){

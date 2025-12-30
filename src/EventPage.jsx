@@ -3,7 +3,7 @@ import axios from "axios"
 function EventPage() {
   const CreateEvent=async ()=>{
     try {
-      const C=await axios.post("http://localhost:5000/event",{
+      const C=await axios.post("https://mini-event-backend-808f.onrender.com/event",{
         imageUrl:"/vite.svg",
         title:"Chandu Game",
         description:"Death Game",

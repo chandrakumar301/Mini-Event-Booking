@@ -7,7 +7,7 @@ function Login() {
 
   const AuthPerson=async ()=>{
     try{
-    const A=await axios.post("http://localhost:5000/login",{
+    const A=await axios.post("https://mini-event-backend-808f.onrender.com/login",{
       email:email,
       password:pass
       })

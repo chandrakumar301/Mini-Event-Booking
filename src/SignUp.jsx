@@ -3,7 +3,7 @@ import axios from "axios"
 import { useState } from 'react';
 function SignUp() {
   const Goto=()=>{
-    
+
   }
   const [name,setName]=useState("");
   const [email,setEmail]=useState("");
@@ -11,7 +11,7 @@ function SignUp() {
   const [password,setPassword]=useState("");
 const Auth= async ()=>{
   try{
-    const res=await axios.post("http://localhost:5000/signup",{
+    const res=await axios.post("https://mini-event-backend-808f.onrender.com/signup",{
       firstName:name,
       secondName:sname,
       email:email,
