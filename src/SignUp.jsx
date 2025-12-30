@@ -18,6 +18,7 @@ const Auth= async ()=>{
       password:password
     })
     console.log(res.data);
+    alert(" Successfully created");
     
   }
   catch (error){

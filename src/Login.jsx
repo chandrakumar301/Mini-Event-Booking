@@ -12,6 +12,7 @@ function Login() {
       password:pass
       })
       console.log(A.data);
+      alert(" Successfully Logged IN");
     }
     catch (error){
        alert(error.response.data.message);

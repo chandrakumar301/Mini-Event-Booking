@@ -41,7 +41,5 @@ export default function Inside() {
         }
 
         </div>
-    // </div>
-    // </div>
   )
 }

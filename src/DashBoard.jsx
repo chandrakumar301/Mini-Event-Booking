@@ -57,7 +57,7 @@ const host1=()=>{
                 <a onClick={()=>{event()}}>Events</a>
                 <a onClick={()=>{host1()}}>Host an Event</a>
                 <a onClick={()=>{urEvents()}}>Your Events</a>
-                <a href="/toggle">Toggle</a>
+                <a onClick={()=>(alert("Go To next Page"))}>Toggle</a>
                 <a onClick={()=>{Log()}}>Login</a>
                 <a onClick={()=>{sign1()}}>SignUp</a>
             </nav>
